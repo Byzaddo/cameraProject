@@ -11,10 +11,12 @@ def calculate_3d_distance(point1, point2):
         (point1.z - point2.z) ** 2
    )
 
+camera_index = 1
+
 mp_hands = mp.solutions.hands
 hands = mp_hands.Hands()
 mp_drawing = mp.solutions.drawing_utils   #hand recognition
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(camera_index)
 
 mp_face_detection = mp.solutions.face_detection
 face_detection = mp_face_detection.FaceDetection(min_detection_confidence=0.5)
