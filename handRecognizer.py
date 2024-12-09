@@ -11,7 +11,7 @@ def calculate_3d_distance(point1, point2):
         (point1.z - point2.z) ** 2
    )
 
-camera_index = 1
+camera_index = 1      #to choose which camera to use
 
 mp_hands = mp.solutions.hands
 hands = mp_hands.Hands()
